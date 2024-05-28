@@ -1,0 +1,6 @@
+#text-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-0.25rem);
+}
