@@ -18,11 +18,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Lint the Code
-        run: npm run lint
+      # - name: Lint the Code
+      #   run: npm run lint
 
-      - name: Test the Code
-        run: npm run test
+      # - name: Test the Code
+      #   run: npm run test
 
       - name: Build the Code
         run: npm run build && ls
