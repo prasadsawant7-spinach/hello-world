@@ -11,12 +11,9 @@ const Flask = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get(`/api${pathname}`, {
-          withCredentials: false,
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-        });
+        const response = await axios.get(
+          `${import.meta.env.VITE_SERVER_URL}${pathname}`
+        );
         setMessage(response.data);
       } catch (error) {
         console.error(error);
