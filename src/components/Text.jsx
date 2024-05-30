@@ -1,5 +1,5 @@
-const Text = () => {
-  return <h1>Hello Vite + React!</h1>;
+const Text = ({ children }) => {
+  return <h1>{children}</h1>;
 };
 
 export default Text;
